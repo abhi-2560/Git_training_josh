@@ -1,0 +1,1 @@
+This is a .md file regarding git training assignments
