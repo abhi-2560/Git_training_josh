@@ -7,6 +7,14 @@ struct Node
     Node *next;
 };
 
+void printList(Node* head) {
+    while (head != nullptr) {
+        cout << head->data << " ";
+        head = head->next;
+    }
+    cout << endl;
+}
+
 int main()
 {
     // Create linked list: 1 -> 2 -> 3 -> 4
@@ -14,4 +22,8 @@ int main()
     head->next = new Node{2, nullptr};
     head->next->next = new Node{3, nullptr};
     head->next->next->next = new Node{4, nullptr};
+
+    cout << "List: ";
+    printList(head);
+    
 }
